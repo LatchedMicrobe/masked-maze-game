@@ -64,18 +64,18 @@ func find_nodes():
 		mask_path.visible = is_masked
 	else:
 		mask_path = get_tree().get_first_node_in_group("mask_path")
-		# mask_path.visible = is_masked
+		mask_path.visible = is_masked
 	
 	if normal_path == null:
 		normal_path = get_tree().get_first_node_in_group("normal_path")
-		# normal_path.visible = not is_masked
+		normal_path.visible = not is_masked
 		
 	if mask_node == null:
 		mask_node = get_tree().get_first_node_in_group("mask")
 
 func _process(delta: float) -> void:
 	handle_animation()
-
+	
 	if Input.is_action_just_pressed("mask") and GlobalVariables.mask_catched == true:
 		is_masked = false
 		handle_mask()

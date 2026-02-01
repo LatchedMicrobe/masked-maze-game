@@ -26,7 +26,8 @@ directories/dch_directory={
 "mask": "res://mask.dch"
 }
 directories/dtl_directory={
-"first_room_timeline": "res://first_room_timeline.dtl"
+"first_room_timeline": "res://first_room_timeline.dtl",
+"start_timeline": "res://start_timeline.dtl"
 }
 layout/style_directory={}
 extensions_folder="res://addons/dialogic_additions"
@@ -83,7 +84,6 @@ enemy=""
 mask_path=""
 normal_path=""
 mask=""
-dialogues=""
 
 [input]
 
